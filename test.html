@@ -1,90 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smooth Anchor Scrolling</title>
-  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
 </head>
-<style>
-    /* Resetting default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Basic styling */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-main {
-  padding-top: 50px; /* To offset the fixed header */
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Smooth scroll effect */
-html {
-  scroll-behavior: smooth;
-}
-
-</style>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-      </ul>
-    </nav>
-  </header>
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
 
-  <main>
-    <section id="section1">
-      <h2>Section 1</h2>
-      <p>This is the first section</p>
-    </section>
-
-    <section id="section2">
-      <h2>Section 2</h2>
-      <p>This is the second section</p>
-    </section>
-
-    <section id="section3">
-      <h2>Section 3</h2>
-      <p>This is the third section</p>
-    </section>
-  </main>
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
 
 </body>
 </html>
